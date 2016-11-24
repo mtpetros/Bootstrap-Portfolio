@@ -1,0 +1,244 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #BCB3BF;
+    color: #312F2F;
+    text-align: center;
+}
+
+#navbar {
+    margin-left: 12%;
+}
+
+.navbar-inverse, .navbar-brand {
+    background-color: #312F2F;
+    border-style: none;
+}
+
+#navbar-brand, ul.navbar-nav > li > a:link, .navbar-inverse > .container > .navbar-collapse > ul > li > a {
+    color: #BCB3BF;
+}
+
+.icon-bar {
+    background-color: #D6D6B1;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #8F8289;
+    color: #312F2F;
+}
+
+.jumbotron h1 {
+    font-size: 80px;
+}
+
+.jumbotron .lead {
+    font-size: 35px;
+}
+
+.row h1 {
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.row h2 {
+    margin-bottom: 50px;
+}
+
+#profilepic {
+    display: block;
+    margin: -45px auto 0px auto;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.connect-space {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #8F8289;
+}
+
+.connect-icons {
+    margin: auto;
+    display: block;
+}
+
+.connect-icons i {
+    color: #312F2F;
+}
+
+.connect-icons i:hover {
+    color: #BCB3BF;
+}
+
+/*Portfolio Hover Effect*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  margin-top: 100px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*End Portfolio Hover Effect*/
+
+.page-number {
+    margin-bottom: 30px;
+}
+
+small > a:hover {
+    color: #312F2F;
+    text-decoration: none;
+}
+
+/*Form Begins*/
+
+#contact-tagline {
+    font-size: 20px;
+}
+
+.contact {
+    width: 50%;
+}
+
+input[id=name], input[id=email], textarea[id=message] {
+    width: 100%;
+    margin: 8px 0px 14px 0px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-family: arial;
+}
+
+input[id=name], input[id=email] {
+    padding: 12px 20px;
+}
+
+textarea[id=message] {
+    padding: 20px 20px;
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[id=name]:focus, input[id=email]:focus, textarea[id=message]:focus  {
+    border: 2px solid #312F2F;
+ }
+
+input[type=submit] {
+    font-family: arial;
+    color: #777777;
+    background-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    width: 65px;
+    height: 35px;
+    padding: 4px 2px 2px 2px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    color: #312F2F;
+    border-color: #312F2F;
+}
+
+input[type=submit]:active {
+    position: relative;
+    top: 2px;
+}
+
+/*Form Ends*/
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 10px;
+    padding-top: 5px;
+    width: 100%;
+    color: #BCB3BF;
+    background-color: #887E84;
+    border-top: 3px solid #312F2F;
+    z-index: 1;
+}
+
+
+
