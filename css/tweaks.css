@@ -166,10 +166,17 @@ small > a:hover {
     text-decoration: none;
 }
 
+small > a:active {
+    color: #337ab7;
+}
 /*Form Begins*/
 
 #contact-tagline {
     font-size: 20px;
+}
+
+.contact-container {
+    margin-bottom: 30px;
 }
 
 .contact {
