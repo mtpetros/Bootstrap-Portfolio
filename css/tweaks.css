@@ -26,10 +26,14 @@ body {
     text-align: center;
     background-color: #8F8289;
     color: #312F2F;
+    height: 235px;
+    margin-bottom: 0px;
 }
 
 .jumbotron h1 {
     font-size: 80px;
+    margin-top: 0px;
+    line-height: 85px;
 }
 
 .jumbotron .lead {
